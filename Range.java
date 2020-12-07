@@ -18,6 +18,9 @@ public class Range implements IntegerSequence {
 
   //@throws NoSuchElementException
   public int next() {
+    if (!hasNext()) {
+      throw new NoSuchElementException("You cannot travel further through this range");
+    }
     int output = current;
     current ++;
     return output;
