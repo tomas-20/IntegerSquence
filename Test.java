@@ -1,8 +1,8 @@
 public class Test {
-  public static void print(IntegerSequence list) {
-    while (list.hasNext()) {
-      System.out.print(list.next());
-      if (list.hasNext()) {
+  public static void print(IntegerSequence seq) {
+    while (seq.hasNext()) {
+      System.out.print(seq.next());
+      if (seq.hasNext()) {
         System.out.print(", ");
       }
     }
