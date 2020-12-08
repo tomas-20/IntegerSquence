@@ -6,6 +6,7 @@ public class Test {
         System.out.print(", ");
       }
     }
+    seq.reset();
     System.out.println();
   }
   public static void main(String[] arr) {
@@ -14,5 +15,7 @@ public class Test {
     int[] nums = {1, 3, 5, 0, -1, 3, 9};
     IntegerSequence as = new ArraySequence(nums);
     print(as);
+    ArraySequence r2 = new ArraySequence(r);
+    print(r2);
   }
 }

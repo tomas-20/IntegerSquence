@@ -7,10 +7,10 @@ public class Range implements IntegerSequence {
     current = a;
   }
   public void reset() {
-    current = 0;
+    current = start;
   }
   public int length() {
-    return end - start;
+    return end - start + 1;
   }
   public boolean hasNext() {
     return current <= end;
